@@ -1,30 +1,27 @@
 import random
 
-# Generate a random number between 1 and 100
-secret_number = random.randint(1, 100)
-attempts = 0
-max_attempts = 5
+def game_result(user, computer):
+    if user == computer:
+        return "It's a tie!"
+    elif (user == 'snake' and computer == 'water') or \
+         (user == 'water' and computer == 'gun') or \
+         (user == 'gun' and computer == 'snake'):
+        return "You win!"
+    else:
+        return "You lose!"
 
-print("🎯 Welcome to the Number Guessing Game!")
-print("I've chosen a number between 1 and 100.")
-print(f"You have {max_attempts} attempts to guess it.\n")
+options = ['snake', 'water', 'gun']
 
-# Loop for max attempts
-while attempts < max_attempts:
-    try:
-        guess = int(input("Enter your guess: "))
-        attempts += 1
+print("Welcome to Snake, Water, Gun Game!")
+print("Choose one: snake 🐍 | water 💧 | gun 🔫")
 
-        if guess < secret_number:
-            print("Too low! Try again.\n")
-        elif guess > secret_number:
-            print("Too high! Try again.\n")
-        else:
-            print(f"🎉 Correct! You guessed the number in {attempts} attempt(s).")
-            break
-    except ValueError:
-        print("Please enter a valid number.\n")
+user_choice = input("Your choice: ").lower()
 
-# If user fails to guess
-if guess != secret_number:
-    print(f"😢 Sorry! You've used all your attempts. The number was {secret_number}.")
+if user_choice not in options:
+    print("Invalid input! Please choose snake, water, or gun.")
+else:
+    computer_choice = random.choice(options)
+    print(f"Computer chose: {computer_choice}")
+
+    result = game_result(user_choice, computer_choice)
+    print(result)
