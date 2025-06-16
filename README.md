@@ -55,10 +55,11 @@ Each incorrect guess will prompt the player with whether the guess was **too low
 
 ---
 ## screenshot
-![project-screenshot]()
+![project-screenshot](https://github.com/Roshan-470/mini-game-python/blob/main/Screenshot%202025-06-17%20003113.png?raw=true)
 
 ## 🚀 Setup Instructions
 
 1. Make sure Python is installed. To check, open a terminal and run:
    ```bash
+   python guessing_game.py
    python --version
