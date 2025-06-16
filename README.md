@@ -1,65 +1,108 @@
-# 🎯 Number Guessing Game (Python)
+# 🐍 Snake, Water, Gun – Python Console Game
 
-Welcome to the **Number Guessing Game**, a simple yet engaging command-line game built using Python. This project is a great way to understand how to handle user input, generate random numbers, use loops and conditionals, and improve the user experience with friendly messages and error handling.
-
----
-
-## 📌 Table of Contents
-
-- [About the Game](#about-the-game)
-- [Features](#features)
-- [How It Works](#how-it-works)
-- [Technologies Used](#technologies-used)
-- [Setup Instructions](#setup-instructions)
-- [Sample Gameplay](#sample-gameplay)
-- [Possible Improvements](#possible-improvements)
-- [License](#license)
+A fun and interactive command-line version of the classic *Snake, Water, Gun* game. This project is built using Python and is perfect for beginners looking to practice basic programming concepts such as user input, conditional logic, and randomization.
 
 ---
 
-## 🧠 About the Game
+## 📋 Table of Contents
 
-In this game, the computer randomly selects a number between **1 and 100**, and the player has **5 attempts** to guess it correctly.
+- [🎮 About the Game](#-about-the-game)
+- [🧠 Game Rules](#-game-rules)
+- [🚀 Features](#-features)
+- [🛠 Requirements](#-requirements)
+- [📦 Installation](#-installation)
+- [▶ How to Play](#-how-to-play)
+- [🖼 Screenshots](#-screenshots)
+- [📈 Future Enhancements](#-future-enhancements)
 
-Each incorrect guess will prompt the player with whether the guess was **too low** or **too high**, helping them get closer to the right answer. If the player guesses the number correctly within 5 attempts, they win the game!
 
----
-
-## 🌟 Features
-
-✅ Random number generation  
-✅ Input validation and error handling  
-✅ Attempt-based gameplay  
-✅ Helpful hints after each guess  
-✅ Friendly messages and emojis for better experience  
-✅ Clean and beginner-friendly Python code
 
 ---
 
-## ⚙️ How It Works
+## 🎮 About the Game
 
-1. The program imports the `random` module to generate a random number between 1 and 100.
-2. The player is prompted to enter a guess.
-3. After each guess:
-   - If it's too high or too low, the program gives feedback.
-   - If it’s correct, the player wins.
-4. The player gets a total of **5 chances**.
-5. If all chances are used without guessing correctly, the correct number is revealed.
+Snake, Water, Gun is a variation of Rock, Paper, Scissors where:
+- Snake drinks water 🐍💧
+- Water damages gun 💧🔫
+- Gun kills snake 🔫🐍
+
+You play against the computer. The one with the stronger choice wins the round!
+
+---
+
+## 🧠 Game Rules
+
+| Your Choice | Computer's Choice | Outcome        |
+|-------------|-------------------|----------------|
+| Snake       | Water             | You Win        |
+| Water       | Gun               | You Win        |
+| Gun         | Snake             | You Win        |
+| Same        | Same              | It's a Tie     |
+| Others      |                   | You Lose       |
 
 ---
 
-## 🧰 Technologies Used
+## 🚀 Features
 
-- **Python 3.x**
-- No external libraries are required.
+- Simple and intuitive gameplay
+- Fun emoji-based choices
+- Computer-generated random choices
+- Quick and easy to run on any system with Python
 
 ---
-## screenshot
-![project-screenshot](https://github.com/Roshan-470/mini-game-python/blob/main/Screenshot%202025-06-17%20003113.png?raw=true)
 
-## 🚀 Setup Instructions
+## 🛠 Requirements
 
-1. Make sure Python is installed. To check, open a terminal and run:
+- Python 3.6 or above
+
+---
+
+## 📦 Installation
+
+1. Clone the repository (if applicable):
+
+## ▶ How to Play
+ 1.  Open your terminal or command prompt.
+ 2.Run the Python script (python game.py).
+ 3.When prompted, type one of the following:
+ 4.snake,water ,gun
+ 5.The computer will randomly pick its choice.
+ 6.The winner will be displayed based on the game rules.
+ 7.Play again to test your luck!
+
+## 📈 Future Enhancements
+ • Add a scoring system (e.g., best of 5 or 10 rounds)
+
+ • Implement game replay functionality without restarting the script
+
+ • Add sound effects for win/loss feedback
+
+ • Introduce a graphical user interface using Tkinter or PyGame
+
+ • Enable multiplayer mode
+
+ • Track player statistics (wins, losses, ties)
+
+ • Web version using Flask or Django
+
+ • Add difficulty levels (Easy, Medium, Hard)
+
+## screenshots
+![image](https://github.com/Roshan-470/mini-game2--python/blob/main/Screenshot%202025-06-17%20005022.png?raw=true)
+
+
+
+#📬 Contact
+Developer: Roshan
+
+linkdin:https://www.linkedin.com/in/roshan-hiwase/
+
+github:https://github.com/Roshan-470
+
+
+
    ```bash
-   python guessing_game.py
-   python --version
+   python game.py
+
+   git clone https://github.com/your-username/snake-water-gun.git
+   cd snake-water-gun
