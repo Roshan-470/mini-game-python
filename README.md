@@ -12,7 +12,6 @@ A fun and interactive command-line version of the classic *Snake, Water, Gun* ga
 - [🛠 Requirements](#-requirements)
 - [📦 Installation](#-installation)
 - [▶ How to Play](#-how-to-play)
-- [🖼 Screenshots](#-screenshots)
 - [📈 Future Enhancements](#-future-enhancements)
 
 
@@ -88,7 +87,7 @@ You play against the computer. The one with the stronger choice wins the round!
  • Add difficulty levels (Easy, Medium, Hard)
 
 ## screenshots
-![image](https://github.com/Roshan-470/mini-game2--python/blob/main/Screenshot%202025-06-17%20005022.png?raw=true)
+![image](https://github.com/Roshan-470/mini-game-python/blob/main/Screenshot%202025-06-17%20003113.png?raw=true)
 
 
 
